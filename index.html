@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img 
+    border="4px"
+            width="250px"
+    src="data:image/png;base64,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" alt="">
+    <div class="container">
+      <div class="wrapper">
+        <div class="input-wrapper">
+          <label for="min">Min:</label>
+          <input type="number" id="min" value="0" />
+        </div>
+        <div class="input-wrapper">
+          <label for="max">Max:</label>
+          <input type="number" id="max" value="10" />
+        </div>
+      </div>
+      <button id="generate">Generate</button>
+      <div id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
